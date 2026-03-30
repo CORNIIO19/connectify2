@@ -24,21 +24,23 @@
     --->
     <header class="header_primario">
 
-        <a href="#hero" class="header_primario_link" aria-label="Ir a Inicio">
-            <img src="./Assets/Logo sin fondo1.png" alt="Logo Connectify" class="header_logo">
-        </a>
         
         <nav class="header_primario_menu">
             <a href="#nosotros" class="navegacion" aria-label="Ir a quienes somos" title="Inicio">Nuestra conexion</a>
 
-            <a href="" class="navegacion" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
+            <a href="#experiencias" class="navegacion" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
 
-            <a href="" class="navegacion" aria-label="Ir a servicios" title="Soluciones">Soluciones en red</a>
+            <a href="#servicios" class="navegacion" aria-label="Ir a servicios" title="Soluciones">Soluciones en red</a>
 
-            <a href="" class="navegacion" aria-label="Ir a presencia" title="presencia">¿Hasta donde llegamos?</a>
+            <a href="#presencia" class="navegacion" aria-label="Ir a presencia" title="presencia">¿Hasta donde llegamos?</a>
 
-            <a href="" class="navegacion" aria-label="Ir a Contacto" title="Contacto">Contactanos</a>
+            <a href="#contacto" class="navegacion" aria-label="Ir a Contacto" title="Contacto">Contactanos</a>
         </nav>
+
+        <a href="#hero" class="header_primario_link" aria-label="Ir a Inicio">
+            <img src="./Assets/Logo sin fondo1.png" alt="Logo Connectify" class="header_logo">
+        </a>
+
     </header>
 
 
@@ -53,16 +55,25 @@
 
         <nav class="header_secundario_menu">
             <a href="#nosotros" class="navegacion_secundaria" aria-label="Ir a quienes somos" title="Inicio">Nuestra conexion</a>
-            <a href="" class="navegacion_secundaria" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
-            <a href="" class="navegacion_secundaria" aria-label="Ir a servicios" title="Soluciones">Soluciones en red</a>
-            <a href="" class="navegacion_secundaria" aria-label="Ir a presencia" title="presencia">¿Hasta donde llegamos?</a>
-            <a href="" class="navegacion_secundaria" aria-label="Ir a Contacto" title="Contacto">Contactanos</a>
+            <a href="#experiencias" class="navegacion_secundaria" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
+            <a href="#servicios" class="navegacion_secundaria" aria-label="Ir a servicios" title="Soluciones">Soluciones en red</a>
+            <a href="#presencia" class="navegacion_secundaria" aria-label="Ir a presencia" title="presencia">¿Hasta donde llegamos?</a>
+            <a href="#contacto" class="navegacion_secundaria" aria-label="Ir a Contacto" title="Contacto">Contactanos</a>
         </nav>
 
         <div class="header_secundario_redes">
-            <img src="./Assets/facebook.png" alt="Logo Facebook" class="redes_logo">
-            <img src="./Assets/logo-instagram.png" alt="Logo Instagram" class="redes_logo">
-            <img src="./Assets/logo-whatssapp.png" alt="Logo Whatsapp" class="redes_logo">
+
+            <a target="_blank" rel="noopener noreferrer"  href="https://www.facebook.com/connectify/?locale=es_LA">
+                <img src="./Assets/facebook.png" alt="Logo Facebook" class="redes_logo">
+            </a>
+
+            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/c0nnectify/">
+                <img src="./Assets/logo-instagram.png" alt="Logo Instagram" class="redes_logo">
+            </a>
+            
+            <a target="_blank" rel="noopener noreferrer" href="https://wa.me/525532503363?text=Hola%20me%20gustaría%20cotizar%20mi%20conectividad%20con%20connectify">
+                <img src="./Assets/logo-whatssapp.png" alt="Logo Whatsapp" class="redes_logo">
+            </a>
         </div>
     </header>
 
@@ -84,7 +95,7 @@
 
                 <h2 class="hero-subtitle2"> a la medida de <span class="accent_hero">tu evento</span></h2>
 
-                <a href="#quienesSomos" class="hero__cta">Descubre Connectify</a>
+                <a href="#nosotros" class="hero__cta">Descubre Connectify</a>
 
             </div>
             
@@ -104,7 +115,7 @@
                                 <div class="slide1__texto">
                                     <p class="slide1__texto__titulo">Hola, somos Connectify</p>
                                     <p class="slide1__texto__subtitulo">
-                                        La experiencia de un evento sin interrupciones
+                                        La experiencia de un evento <span class="accent_slide1">sin interrupciones</span> 
                                     </p>
                                     <p class="slide1__texto__parrafo">
                                         Detrás de cada solución hay un equipo de expertos apasionados
@@ -123,7 +134,7 @@
                             <div class="slide2-inner">
                                 <div class="slide2__texto">
                                     <p class="slide2__texto__parrafo">
-                                        Porque cada gran momento merece una <span class="accent">conexión perfecta</span>
+                                        Porque cada gran momento merece una <span class="accent_slide2">conexión perfecta</span>
                                     </p>
                                     <p class="slide2__texto__parrafo2">
                                         En Connectify, eliminamos las preocupaciones técnicas para que
@@ -142,7 +153,7 @@
                                 </div>
                                 <div class="slide3__texto">
                                     <p class="slide3__texto__titulo">
-                                        Soluciones de red diseñadas <span class="accent">a la medida</span> de tu evento
+                                        Soluciones de red diseñadas <span class="accent_slide3">a la medida</span> de tu evento
                                     </p>
                                     <p class="slide3__texto__parrafo">
                                         Analizamos cada detalle de tu evento, diseñamos una red personalizada y la implementamos con soporte continuo para que todo funcione sin interrupciones.
@@ -246,10 +257,10 @@
         <!-- DIVS DE SERVICIOS Y CLIENTES  -->
         <section id="servicios" class="servicios">
 
-            <h2>Soluciones de conectividad para eventos</h2>
-            <p>Servicios profesionales para eventos corporativos, streaming y experiencias en vivo.</p>
+            <h2 class="servcios_titulo">Soluciones de conectividad para eventos</h2>
+            <p class="servicios_subtitulo">Servicios profesionales para eventos corporativos, streaming y experiencias en vivo.</p>
             
-            <div class="servicios">
+            <div class="servicios_div">
             
                 <div class="servicio_1">
                     <div class="servicio-back">
@@ -340,8 +351,8 @@
 
         <!-- MAPA DE MEXICO  -->
         <section id="presencia" class="presencia">
-            <h2>Cobertura nacional</h2>
-            <p>Llevamos <span class="cobertura-accent">conectividad profesional</span> a eventos en <span class="cobertura-accent"> todo México</span></p>
+            <h2 class="presencia_titulo">Cobertura nacional</h2>
+            <p class="presencia_subtitulo">Llevamos <span class="presencia-accent">conectividad profesional</span> a eventos en <span class="presencia-accent"> todo México</span></p>
 
             <div class="container">
 
@@ -494,7 +505,7 @@
             <p class="contacto__texto">Cuentanos que tienes en mente y uno de nuestros especialistas</p> 
             <p class="contacto__texto-p">te ayudará a diseñar la conectividad perfecta</p> 
 
-                <a target="_blank" rel="noopener noreferrer" class="contacto__boton" href="https://api.whatsapp.com/qr/S3LHXVGHBQUHL1?autoload=1&app_absent=0">
+                <a target="_blank" rel="noopener noreferrer" class="contacto__boton" href="https://wa.me/525532503363?text=Hola%20me%20gustaría%20cotizar%20mi%20conectividad%20con%20connectify">
                 <div class="contacto__boton-imagen">
                     <img src="Assets/whatsapp.png" alt="whatsapp boton">
                 </div>
@@ -512,7 +523,7 @@
         
     </main>
     
-    <footer>
+    <footer class="footer">
         <div class="footer__row1">
 
             <div class="columna1">
@@ -551,7 +562,7 @@
                 <p>Ciudad de Mexico, Mexico</p>
             </div>
 
-                <a target="_blank" rel="noopener noreferrer" class="footer__boton" href="https://api.whatsapp.com/qr/S3LHXVGHBQUHL1?autoload=1&app_absent=0">
+                <a target="_blank" rel="noopener noreferrer" class="footer__boton" href="https://wa.me/525532503363?text=Hola%20me%20gustaría%20cotizar%20mi%20conectividad%20con%20connectify">
                 <div class="footer__boton-texto">
                     <p>Hablar con un asesor</p>
                 </div>
@@ -572,6 +583,7 @@
     <script src="./JS/Global/lenis-section-scroll.js"></script>
     <script src="./JS/Global/background-transition.js"></script>
     <script src="./JS/Global/header-toggle.js"></script>
+    <script src="./JS/Global/active-links.js"></script>
     <script src="./JS/Sections/carousel-clientes.js"></script>
     <script type="module">
         import { initHeroAnimations } from './JS/Sections/hero.js';

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const body = document.body;
 
   const themes = {
-    hero: "linear-gradient(180deg, rgba(11, 15, 20, 0.65) 0%, rgba(14, 17, 23, 0.55) 60%, rgba(2, 2, 4, 0.7) 100%), url('./Assets/FondoHero.png')",
+    hero: "url('./Assets/FondoHero.png')",
     nosotros: "linear-gradient(180deg, #f7f9fc 0%, #eef3f9 55%, #e6edf6 100%)",
     experiencias: "linear-gradient(180deg, #f8fbff 0%, #f0f4fa 55%, #e8edf5 100%)",
     servicios: "linear-gradient(180deg, #f5f9ff 0%, #edf3fb 55%, #e4ebf5 100%)",
