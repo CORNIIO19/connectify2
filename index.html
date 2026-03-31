@@ -24,8 +24,20 @@
     --->
     <header class="header_primario">
 
+        <button
+            class="header_menu_toggle"
+            type="button"
+            aria-label="Abrir menu principal"
+            aria-expanded="false"
+            aria-controls="menu-primario"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         
-        <nav class="header_primario_menu">
+        <nav id="menu-primario" class="header_primario_menu">
             <a href="#nosotros" class="navegacion" aria-label="Ir a quienes somos" title="Inicio">Nuestra conexion</a>
 
             <a href="#experiencias" class="navegacion" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
@@ -49,11 +61,23 @@
         -Precensia
     --->
     <header class="header_secundario">
+        <button
+            class="header_menu_toggle"
+            type="button"
+            aria-label="Abrir menu secundario"
+            aria-expanded="false"
+            aria-controls="menu-secundario"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <a href="#hero" class="header_secundario_link" aria-label="Ir a Inicio">
             <img class="header_secundario_logo" src="./Assets/Logo sin fondo.png" alt="" srcset="">
         </a>
 
-        <nav class="header_secundario_menu">
+        <nav id="menu-secundario" class="header_secundario_menu">
             <a href="#nosotros" class="navegacion_secundaria" aria-label="Ir a quienes somos" title="Inicio">Nuestra conexion</a>
             <a href="#experiencias" class="navegacion_secundaria" aria-label="Ir a experiencias" title="Historias conectadas">Historias conectadas</a>
             <a href="#servicios" class="navegacion_secundaria" aria-label="Ir a servicios" title="Soluciones">Soluciones en red</a>
@@ -584,7 +608,9 @@
     <script src="./JS/Global/background-transition.js"></script>
     <script src="./JS/Global/header-toggle.js"></script>
     <script src="./JS/Global/active-links.js"></script>
+    <script src="./JS/Global/hamburger-menu.js"></script>
     <script src="./JS/Sections/carousel-clientes.js"></script>
+    <script src="./JS/Sections/experiencias-mobile-carousel.js"></script>
     <script type="module">
         import { initHeroAnimations } from './JS/Sections/hero.js';
         document.addEventListener('DOMContentLoaded', initHeroAnimations);
